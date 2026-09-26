@@ -19,12 +19,12 @@ export default async function AgendaPage() {
 
   return (
     <div className="space-y-10">
-      <h1 className="text-3xl font-extrabold text-[#2C221E] border-b-4 border-[#A0522D] pb-2 inline-block">
+      <h1 className="text-3xl font-extrabold text-[#1D2630] border-b-4 border-[#1D4E89] pb-2 inline-block">
         {uiText.agenda.title}
       </h1>
 
       <section className="space-y-4">
-        <h2 className="text-xl font-bold text-[#A0522D]">{uiText.agenda.upcoming}</h2>
+        <h2 className="text-xl font-bold text-[#1D4E89]">{uiText.agenda.upcoming}</h2>
         {upcoming.length === 0 ? (
           <p className="text-gray-500 italic bg-white p-6 rounded-lg">{uiText.home.noEvents}</p>
         ) : (
