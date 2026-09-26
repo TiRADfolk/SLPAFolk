@@ -56,13 +56,13 @@ export default async function HomePage() {
           <ImageWithFallback
             src={formatDriveImageUrl(config.logo)}
             alt={config.nom}
-            className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover border-4 border-[#A0522D]"
+            className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover border-4 border-[#1D4E89]"
           />
         )}
         <div className="space-y-3 text-center md:text-left flex-grow">
-          <h2 className="text-2xl font-bold text-[#2C221E]">{config.presentationTitre}</h2>
+          <h2 className="text-2xl font-bold text-[#1D2630]">{config.presentationTitre}</h2>
           <p className="text-gray-700 whitespace-pre-line leading-relaxed">{config.presentationTexte}</p>
-          <Link href="/presentation" className="inline-flex items-center justify-center gap-2 bg-[#A0522D] hover:bg-[#804020] text-white font-bold py-2 px-4 rounded-lg transition shadow">
+          <Link href="/presentation" className="inline-flex items-center justify-center gap-2 bg-[#1D4E89] hover:bg-[#15395F] text-white font-bold py-2 px-4 rounded-lg transition shadow">
             <SearchIcon />
             {uiText.common.readMore}
           </Link>
@@ -72,9 +72,9 @@ export default async function HomePage() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Section Événements à venir */}
         <section className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-4">
-          <div className="flex justify-between items-center border-b-2 border-[#A0522D] pb-2">
-            <h2 className="text-2xl font-bold text-[#2C221E]">{uiText.home.upcomingEvents}</h2>
-            <Link href="/agenda" className="inline-flex items-center justify-center gap-2 bg-[#A0522D] hover:bg-[#804020] text-white font-bold py-2 px-4 rounded-lg transition shadow">
+          <div className="flex justify-between items-center border-b-2 border-[#1D4E89] pb-2">
+            <h2 className="text-2xl font-bold text-[#1D2630]">{uiText.home.upcomingEvents}</h2>
+            <Link href="/agenda" className="inline-flex items-center justify-center gap-2 bg-[#1D4E89] hover:bg-[#15395F] text-white font-bold py-2 px-4 rounded-lg transition shadow">
               <SearchIcon />
               Voir tout
             </Link>
@@ -86,13 +86,13 @@ export default async function HomePage() {
               {upcomingEvents.map(event => (
                 <div key={event.id} className="p-3 bg-amber-50/50 rounded-lg border border-amber-100 flex justify-between items-center">
                   <div>
-                    <span className="text-xs font-bold text-[#D97706] block">{formatDateFR(event.date)}</span>
-                    <h3 className="font-bold text-[#2C221E]">{event.title}</h3>
+                    <span className="text-xs font-bold text-[#4FA3A5] block">{formatDateFR(event.date)}</span>
+                    <h3 className="font-bold text-[#1D2630]">{event.title}</h3>
                     <p className="text-xs text-gray-600">
                       {event.estPublic?.toLowerCase() === 'oui' ? uiText.agenda.public : uiText.agenda.private}
                     </p>
                   </div>
-                  <Link href="/agenda" className="inline-flex items-center justify-center gap-1 bg-[#A0522D] text-white p-2 rounded hover:bg-[#804020] transition">
+                  <Link href="/agenda" className="inline-flex items-center justify-center gap-1 bg-[#1D4E89] text-white p-2 rounded hover:bg-[#15395F] transition">
                     <SearchIcon />
                   </Link>
                 </div>
@@ -102,15 +102,15 @@ export default async function HomePage() {
         </section>
         {/* Section Contact */}
         <section className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-4">
-          <h2 className="text-2xl font-bold text-[#2C221E] border-b-2 border-[#A0522D] pb-2">{uiText.nav.contact}</h2>
+          <h2 className="text-2xl font-bold text-[#1D2630] border-b-2 border-[#A0522D] pb-2">{uiText.nav.contact}</h2>
           <p className="text-gray-700 leading-relaxed text-sm">
             Pour toute demande de réservation, concert, bal folk ou renseignement, n'hésitez pas à nous contacter directement.
           </p>
           <div className="space-y-4 text-gray-800 pt-2">
             {config.email && (
               <div className="flex flex-col sm:flex-row sm:items-center justify-between p-4 bg-amber-50/50 rounded-lg">
-                <span className="font-bold text-[#2C221E]">Email :</span>
-                <a href={`mailto:${config.email}`} className="text-[#A0522D] hover:underline font-medium">
+                <span className="font-bold text-[#1D2630]">Email :</span>
+                <a href={`mailto:${config.email}`} className="text-[#1D4E89] hover:underline font-medium">
                   {config.email}
                 </a>
               </div>
