@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --bg-primary: #FAF7F2;
-  --text-primary: #2C221E;
+  --bg-primary: #2E5B88;
+  --text-primary: #1F2A37;
   --accent-folk: #A0522D;
-  --accent-folk-hover: #804020;
-  --accent-secondary: #D97706;
+  --accent-folk-hover: #21415F;
+  --accent-secondary: #C98B47;
   --nav-padding-y: 16px;
   --nav-padding-x: 16px;
   --brand-font-size: 20px;
