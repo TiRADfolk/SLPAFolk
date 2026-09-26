@@ -24,11 +24,11 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
   const cssVars = `
     :root {
-      --bg-primary: ${style.bg || '#FAF7F2'};
-      --text-primary: ${style.text || '#2C221E'};
+      --bg-primary: ${style.bg || '#2E5B88'};
+      --text-primary: ${style.text || '#21415F'};
       --accent-folk: ${style.primary || '#A0522D'};
-      --accent-folk-hover: ${style['primary-hover'] || '#804020'};
-      --accent-secondary: ${style.secondary || '#D97706'};
+      --accent-folk-hover: ${style['primary-hover'] || '#1F2A37'};
+      --accent-secondary: ${style.secondary || '#F5F8FC'};
       --nav-padding-y: ${style['nav-padding-y'] || '16px'};
       --nav-padding-x: ${style['nav-padding-x'] || '16px'};
       --brand-font-size: ${style['brand-font-size'] || '20px'};
